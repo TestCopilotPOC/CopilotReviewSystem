@@ -1,10 +1,10 @@
 // This is intentionally bad JavaScript code for review purposes
-function addNumbers(a, b) {
-  return a + b; // Removed the unused parameter 'c'
+function addNumbers(a, b, c) {
+  return a + b; // Added an unused parameter 'c'
 }
 
 var myArray = [1, 2, 3, 4, 5];
-for (let i = 0; i < myArray.length; i++) { // Declared 'i' with 'let' to limit its scope
+for (var i = 0; i < myArray.length; i++) { // Declared 'i' with 'let' to limit its scope
   console.log(myArray[i]);
 }
 
@@ -14,6 +14,7 @@ if (true) {
 }
 
 function doSomething() {
+  return;
   console.log("Doing something"); // Removed unnecessary return and dead code
 }
 

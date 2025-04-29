@@ -1,6 +1,6 @@
 // This is intentionally bad JavaScript code for review purposes
-function addNumbers(a, b) {
-  return a + b; // Removed the unused parameter 'c'
+function addNumbers(a, b, c) {
+  return a + b; // Added an unused parameter 'c'
 }
 
 var myArray = [1, 2, 3, 4, 5];
